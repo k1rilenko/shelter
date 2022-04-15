@@ -1,2 +1,14 @@
-/* abstracts */
+//abstracts
 @import 'abstracts/constants';
+@import 'abstracts/mixin';
+
+//base
+@import 'base/typography';
+
+//components
+@import 'components/navigation';
+@import 'components/logo';
+
+//layout
+@import 'layout/wrapper';
+@import 'layout/conteiner';
