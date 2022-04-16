@@ -1,0 +1,52 @@
+.wrapper__footer {
+    display: flex;
+    padding: 40px 40px 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.contact__title {
+    @include font (3.5rem, 4.5rem, $color-light);
+    letter-spacing: 0.06em;
+    margin-top: 19px;
+    max-width: 280px;
+}
+
+.adress__title {
+    @include font (3.5rem, 4.5rem, $color-light);
+    letter-spacing: 0.06em;
+    margin-top: 19px;
+    max-width: 270px;
+}
+
+.contact__text {
+    @include font (2.0rem, 2.3rem, $color-primary);
+    letter-spacing: 0.06em;
+}
+
+.adress__text {
+    @include font (2.0rem, 2.3rem, $color-primary);
+    letter-spacing: 0.06em;
+}
+
+.contact__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact__email {
+    margin: 40px 0;
+}
+
+.contact_img {
+    height: 32px;
+    margin-right: 20px;
+}
+
+.adress__item {
+    margin: 33px 0;
+}
+
+

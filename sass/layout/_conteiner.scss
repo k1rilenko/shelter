@@ -2,10 +2,11 @@
     width: 100%;
 }
 
-.conteiner_start-screen {
+.conteiner_start-screen, .conteiner_footer {
     background: $color-background-header;
 }
 
-.conteiner_pets {
+.conteiner_pets, .conteiner_donation {
     background: $color-background;
 }
+

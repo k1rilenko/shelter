@@ -73,6 +73,30 @@ pre {
 /**
    * Remove the gray background on active links in IE 10.
    */
+a {
+  text-decoration: none;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /**
    * 1. Remove the bottom border in Chrome 57-
    * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -456,7 +480,7 @@ ul .menu__items {
   font-style: normal;
   color: #292929;
   letter-spacing: 0.06em;
-  padding: 15px 45px;
+  padding: 14px 45px;
   border: 2px solid #F1CDB3;
   border-radius: 100px;
   text-decoration: none;
@@ -472,12 +496,61 @@ ul .menu__items {
 }
 
 .button:hover {
+  border-color: #FDDCC4;
+  background: #FDDCC4;
+}
+
+.button-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.button-slider_right {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.button-slider:hover {
+  border-color: #FDDCC4;
   background: #FDDCC4;
 }
 
 .card {
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border-radius: 9px;
   max-width: 270px;
+  max-height: 435px;
+  background: #FAFAFA;
+  margin: 0 45px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
 .card__name {
@@ -490,6 +563,11 @@ ul .menu__items {
   color: #545454;
   letter-spacing: 0.06em;
   width: 100%;
+  margin: 30px 0;
+}
+
+.card__button {
+  margin-bottom: 30px;
 }
 
 .wrapper {
@@ -510,11 +588,11 @@ ul .menu__items {
   width: 100%;
 }
 
-.conteiner_start-screen {
+.conteiner_start-screen, .conteiner_footer {
   background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
-.conteiner_pets {
+.conteiner_pets, .conteiner_donation {
   background: #F6F6F6;
 }
 
@@ -605,9 +683,227 @@ ul .menu__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.wrapper__help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 77px 68px 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.help__title {
+  max-width: 310px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.help-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.help-item__name {
+  margin-top: 30px;
+}
+
+.help_one {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 55px;
+}
+
+.help_two {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.help_two .help-item {
+  margin: 0 60px;
+}
+
+.wrapper_donation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 40px 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.donation__title {
+  max-width: 300px;
+}
+
+.donation__text {
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #545454;
+  letter-spacing: 0.06em;
+  margin: 20px 0;
+}
+
+.donation__paragraph {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #B2B2B2;
+  max-width: 380px;
+  margin-top: 20px;
+}
+
+.donation__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 15px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  height: 43px;
+  background: #F1CDB3;
+  border-radius: 9px;
+}
+
+.donation__bank-card {
+  width: 30px;
+  height: 23px;
+  margin-right: 15px;
+}
+
+.donation__number-card {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #545454;
+  letter-spacing: 0.06em;
+}
+
+.wrapper__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 40px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+}
+
+.contact__title {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  letter-spacing: 0.06em;
+  margin-top: 19px;
+  max-width: 280px;
+}
+
+.adress__title {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  letter-spacing: 0.06em;
+  margin-top: 19px;
+  max-width: 270px;
+}
+
+.contact__text {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #F1CDB3;
+  letter-spacing: 0.06em;
+}
+
+.adress__text {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #F1CDB3;
+  letter-spacing: 0.06em;
+}
+
+.contact__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__email {
+  margin: 40px 0;
+}
+
+.contact_img {
+  height: 32px;
+  margin-right: 20px;
+}
+
+.adress__item {
+  margin: 33px 0;
 }
 /*# sourceMappingURL=style.css.map */
