@@ -1,0 +1,12 @@
+.card {
+    margin: 0 auto;
+    max-width: 270px;
+}
+
+.card__name {
+    display: inline-block;
+    text-align: center;
+    @include font (2.0rem, 2.3rem);
+    letter-spacing: 0.06em;
+    width: 100%;
+}

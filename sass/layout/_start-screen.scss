@@ -1,0 +1,17 @@
+.start-screen {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+.preview__title {
+    max-width: 310px;
+    margin: 163px 0 42px;
+}
+
+.preview__text {
+    max-width: 460px;
+    font-family: Arial, Helvetica, sans-serif;
+    @include font (1.5rem, 2.4rem, $color-menu);
+    margin-bottom: 42px;
+}

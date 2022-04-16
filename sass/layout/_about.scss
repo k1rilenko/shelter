@@ -1,0 +1,25 @@
+.wrapper__about {
+    display: flex;
+    padding: 80px 40px 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    padding: 14px 0 0 0;
+}
+
+.about-image {
+    margin-right: 120px;
+}
+
+.about__title {
+    max-width: 370px;
+}
+
+.about__text {
+    max-width: 430px;
+    font-family: Arial, Helvetica, sans-serif;
+    @include font (1.5rem, 2.4rem, $color-text);
+    margin-top: 25px;
+}

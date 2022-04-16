@@ -1,14 +1,21 @@
 //abstracts
 @import 'abstracts/constants';
 @import 'abstracts/mixin';
+@import 'abstracts/normolize';
 
 //base
 @import 'base/typography';
 
 //components
 @import 'components/navigation';
+@import 'components/header';
 @import 'components/logo';
+@import 'components/buttons';
+@import 'components/card';
 
 //layout
 @import 'layout/wrapper';
 @import 'layout/conteiner';
+@import 'layout/start-screen';
+@import 'layout/about';
+@import 'layout/our-pets';

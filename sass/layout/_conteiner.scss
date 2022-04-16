@@ -1,8 +1,11 @@
 .conteiner {
     width: 100%;
-    margin: 0 auto;
 }
 
 .conteiner_start-screen {
-    background-color: $color-background-header;
+    background: $color-background-header;
+}
+
+.conteiner_pets {
+    background: $color-background;
 }

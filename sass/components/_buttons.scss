@@ -1,0 +1,23 @@
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    @include font (1.7rem, 2.2rem, $color-text-button);
+    letter-spacing: 0.06em;
+    padding: 15px 45px;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button_colored {
+    background: $color-primary;
+}
+
+.button_bordered {
+    border-color: $color-primary-light;
+}
+
+.button:hover {
+    background: $color-primary-light;
+}
