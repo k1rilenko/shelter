@@ -12,16 +12,14 @@
         <div class="wrapper start-screen__wrapper">
             <div class="header">
                 <div class="logo header__logo">
-                    <h1 class="logo__title">Cozy House</h1>
+                    <h1 class="logo__title"><a class="logo__title" href="/pages/index.html">Cozy House</a></h1>
                     <span class="logo__subtitle">Shelter for pets in Boston</span>
                 </div>
                 <nav class="menu header__menu">
-                    <ul>
-                        <li class="menu__items active">About the shelter</li>
-                        <li class="menu__items">Our pets</li>
-                        <li class="menu__items">Help the shelter</li>
-                        <li class="menu__items">Contacts</li>
-                    </ul>
+                    <a class="menu__items active" href="../pages/index.html">About the shelter</a>
+                    <a href="/pages/our-pets.html" class="menu__items">Our pets</a>
+                    <a href="#help" class="menu__items">Help the shelter</a>
+                    <a href="#footer" class="menu__items">Contacts</a>
                 </nav>
             </div>
             <div class="start-screen">
@@ -66,10 +64,10 @@
                 </div>
                 <div class="button-slider button-slider_right"><img src="/assets/icons/Arrow.png" alt="right"></div>
             </div>
-            <button class="button button_pets button_colored">Get to know the rest</button>
+            <a class="button button_pets button_colored" href="/pages/our-pets.html">Get to know the rest</a>
         </div>
     </section>
-    <section class="conteiner conteiner_help">
+    <section id="help" class="conteiner conteiner_help">
         <div class="wrapper wrapper__help">
             <h3 class="help__title">How you can help our shelter</h3>
             <div class="help help_one">
@@ -120,15 +118,18 @@
             <div class="donation">
                 <h3 class="donation__title">You can also make a donation</h3>
                 <h5 class="donation__text">Name of the bank / Type of bank account</h5>
-                <div class="donation__card">
-                    <img class="donation__bank-card" src="/assets/icons/credit-card.png" alt="credit-card">
-                    <span class="donation__number-card">8380 2880 8028 8791 7435</span>
-                </div>
+                <a href="##">
+                    <div class="donation__card">
+                        <img class="donation__bank-card" src="/assets/icons/credit-card.png" alt="credit-card">
+                        <span class="donation__number-card">8380 2880 8028 8791 7435</span>
+                    </div>
+                </a>
+                
                 <p class="donation__paragraph">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
             </div>
         </div>
     </section>
-    <section class="conteiner conteiner_footer">
+    <section id="footer" class="conteiner conteiner_footer">
         <div class="wrapper wrapper__footer">
             <div class="contact">
                 <h3 class="contact__title">For questions and suggestions</h3>

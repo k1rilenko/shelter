@@ -75,6 +75,8 @@ pre {
    */
 a {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 h3 {
@@ -414,13 +416,42 @@ h4 {
   letter-spacing: 0.06em;
 }
 
+@font-face {
+  font-family: 'Arial';
+  src: url("/assets/fonts/Arial-ItalicMT.woff2") format("woff2"), url("/assets/fonts/Arial-ItalicMT.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url("/assets/fonts/ArialMT.woff2") format("woff2"), url("/assets/fonts/ArialMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url("/assets/fonts/Georgia.woff2") format("woff2"), url("/assets/fonts/Georgia.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 ul .menu__items {
   display: inline-block;
 }
 
 .menu__items {
+  color: #CDCDCD;
   list-style: none;
   margin: 0 0 0 35px;
+}
+
+.menu__items_our-pets {
+  color: #292929;
 }
 
 .menu__items:hover {
@@ -449,6 +480,9 @@ ul .menu__items {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
@@ -456,6 +490,11 @@ ul .menu__items {
 }
 
 .logo__title {
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #F1CDB3;
   letter-spacing: 0.06em;
   margin-bottom: 7px;
 }
@@ -468,6 +507,14 @@ ul .menu__items {
   font-style: normal;
   color: #FFFFFF;
   letter-spacing: 0.1em;
+}
+
+.logo__title_our-pets {
+  color: #545454;
+}
+
+.logo__subtitle_our-pets {
+  color: #292929;
 }
 
 .button {
@@ -584,6 +631,11 @@ ul .menu__items {
   padding-top: 60px;
 }
 
+.our-pets__wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .conteiner {
   width: 100%;
 }
@@ -594,6 +646,15 @@ ul .menu__items {
 
 .conteiner_pets, .conteiner_donation {
   background: #F6F6F6;
+}
+
+.conteiner_our-pets {
+  position: fixed;
+  background: #FFFFFF;
+}
+
+.conteiner__catalog-pets {
+  padding-top: 120px;
 }
 
 .start-screen {
@@ -679,6 +740,10 @@ ul .menu__items {
   margin-bottom: 60px;
 }
 
+.card__our-pets {
+  width: 30%;
+}
+
 .slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -691,6 +756,14 @@ ul .menu__items {
           align-items: center;
   width: 100%;
   margin-bottom: 60px;
+}
+
+.slider_catalog {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .wrapper__help {
