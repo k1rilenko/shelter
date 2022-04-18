@@ -8,6 +8,12 @@
     max-height: 435px;
     background: #FAFAFA;
     margin: 0 45px;
+    @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
+        margin: 0;
+    }
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        margin: 0 50% 20px;
+    }
 }
 
 .card:hover {
@@ -29,6 +35,9 @@
 
 .card__our-pets {
     margin: 0 0 30px;
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+
+    }
 }
 
 

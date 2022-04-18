@@ -24,4 +24,7 @@ ul .menu__items {
 .menu {
     font-family: Arial, Helvetica, sans-serif;
     @include font (1.5rem, 2.4rem, $color-menu);
+    @media (min-width: $mobile-width-min) and (max-width: $mobile-width-max) {
+        display: none;
+    }
 }
